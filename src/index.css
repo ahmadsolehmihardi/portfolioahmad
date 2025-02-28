@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+.elementor-kit-932{
+    
+    --e-global-color-primary: #6EC1E4;
+    --e-global-color-secondary: #54595F;
+    --e-global-color-text: #7A7A7A;
+    --e-global-color-accent: #61CE70;
+    --e-global-color-678c96d9: #4054B2;
+    --e-global-color-67897b3e: #23A455;
+    --e-global-color-555cd02c: #000;
+    --e-global-color-4f748178: #FFF;
+    --e-global-typography-primary-font-family: "Roboto";
+    --e-global-typography-primary-font-weight: 600;
+    --e-global-typography-secondary-font-family: "Roboto Slab";
+    --e-global-typography-secondary-font-weight: 400;
+    --e-global-typography-text-font-family: "Roboto";
+    --e-global-typography-text-font-weight: 400;
+    --e-global-typography-accent-font-family: "Roboto";
+    --e-global-typography-accent-font-weight: 500;
+}
+
+.gambarMuter{
+    @apply hover:rotate-210 duration-10000;
+    
+}
+.gambarBerputar{
+    animation: gambarBerputar 10s ease infinite alternate;
+}
+.gambarMembesar2{
+    animation: gambarMembesar 3s ease infinite alternate;
+}
+
+@keyframes gambarMembesar {
+    0%{
+       transform: translatey(0)
+    }
+    100%{
+        transform: translatey(200px)
+    }
+}
+@keyframes gambarBerputar {
+    0%{
+       transform: rotate(0)
+    }
+    100%{
+        transform: rotate(360deg)
+    }
+}
+.font-judul{
+    @apply text-3xl text-white font-semibold
+}
+.paragraf{
+    @apply text-gray-300 font-medium
+}
+
+.hamburger{
+    background-image: url('../src/assets/bars-solid.svg');
+    width: 26px;
+    height: 30px;
+  }
+  .berkas{
+    background-image: url('../src/assets/file.svg');
+    width: 26px;
+    height: 30px;
+  }
+  .tandax{
+    background-image: url('../src/assets/xmark-solid.svg');
+    width: 24px;
+    height: 30px;
+  }
+  .balok{
+   @apply bg-gradient-to-b from-green-100 to-green-200 ;
+    
+  }
